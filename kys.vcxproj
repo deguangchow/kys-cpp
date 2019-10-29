@@ -21,13 +21,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -60,15 +60,15 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_TINYPOT;_SDL_MIXER_AUDIO1;WIN32;_DEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;mod;src;$(VCPKG_LIB_PATH)\x86-windows\include;common;local/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;mod;src;$(VCPKG_LIB_PATH)\x86-windows\include;common;local/include;include/SDL2</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_image.lib;sdl2_mixer.lib;sdl2_ttf.lib;bass.lib;bassmidi.lib;libiconv.lib;tinypot.lib;lua.lib;opencc.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(VCPKG_LIB_PATH)\x86-windows\lib;$(VCPKG_LIB_PATH)\x86-windows\lib\manual-link;local/lib/x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_image.lib;sdl2_mixer.lib;sdl2_ttf.lib;bass.lib;bassmidi.lib;libiconv.lib;tinypot.lib;lua51.lib;opencc.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VCPKG_LIB_PATH)\x86-windows\lib;$(VCPKG_LIB_PATH)\x86-windows\lib\manual-link;\lib\x86;F:\github\kys-cpp\lib\x86</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\Application.cpp">
@@ -164,7 +164,7 @@
       <Filter>zip</Filter>
     </ClCompile>
     <ClCompile Include="src\ChemistryEngine.cpp">
-      <Filter>application</Filter>
+      <Filter>headers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
